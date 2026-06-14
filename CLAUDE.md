@@ -77,6 +77,15 @@ app/src/main/java/com/tertiaryinfotech/sudokuapp/
 - Storage keys and JSON shape are kept compatible with the iOS app's intent (same
   `SudokuApp.*` key names) for conceptual parity, though the two apps don't share data.
 
+## Skills
+
+- A project-level skill **`mobile-android-design`** is installed at
+  `.agents/skills/mobile-android-design/` (symlinked into `.claude/skills/`). It
+  covers Material 3 + Jetpack Compose patterns and is **contextualised to this app**
+  — it documents the no-NavHost `AppScreen` switch, the fixed iOS-matched palette
+  (no Material You dynamic color), portrait phone-only scope, and the `ItemListCard`
+  row pattern. Use it when designing/implementing Compose UI here.
+
 ## Conventions
 
 - Phone-only, portrait only (`android:screenOrientation="portrait"`).
