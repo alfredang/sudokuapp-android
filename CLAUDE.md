@@ -85,6 +85,14 @@ app/src/main/java/com/tertiaryinfotech/sudokuapp/
   — it documents the no-NavHost `AppScreen` switch, the fixed iOS-matched palette
   (no Material You dynamic color), portrait phone-only scope, and the `ItemListCard`
   row pattern. Use it when designing/implementing Compose UI here.
+- A project-level skill **`android-launcher-icon`** is installed at
+  `.agents/skills/android-launcher-icon/` (symlinked into `.claude/skills/`). It
+  generates/repairs the adaptive launcher icon and documents the foreground-sizing
+  gotcha (Samsung One UI upscales the adaptive foreground ~1.4×, so an over-large
+  foreground renders as a white tile — keep it ~0.50 of the 108dp canvas). Bundles
+  `IconGen.java` (regenerate all densities + Play art) and `IconPreview.java`
+  (composite + mask to preview the AOSP and Samsung render). Use it when the app
+  icon looks wrong or needs regenerating.
 
 ## Conventions
 
