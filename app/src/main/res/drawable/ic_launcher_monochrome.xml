@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Themed-icon (Android 13+) monochrome layer: a clean 3x3 grid silhouette kept
+     inside the adaptive safe zone. The system tints this by alpha, so it must be a
+     single-colour glyph on transparent (not the full-colour foreground). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- outer rounded grid frame -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M37,27 L71,27 A10,10 0 0 1 81,37 L81,71 A10,10 0 0 1 71,81 L37,81 A10,10 0 0 1 27,71 L27,37 A10,10 0 0 1 37,27 Z" />
+    <!-- interior vertical lines -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M45.3,31 L45.3,77 M62.7,31 L62.7,77" />
+    <!-- interior horizontal lines -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M31,45.3 L77,45.3 M31,62.7 L77,62.7" />
+</vector>
